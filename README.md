@@ -1,2 +1,4 @@
 # practica-1-tienda
-Práctica 1: Desarrollo de una tienda online para la materia Tecnologías en Internet.
+Practica 1: Desarrollo de una tienda online para la materia Tecnologias en Internet.
+
+Permite la navegacion de productos, gestion de catalogo y procesamiento simulado de compras.
