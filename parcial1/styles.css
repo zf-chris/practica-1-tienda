@@ -66,8 +66,7 @@ form textarea {
 #mensaje {
   margin-top: 12px;
   padding: 10px;
-  background-color: #d8f3dc;
-  border: 1px solid #52b788;
+  background-color: #fdfefd;
   border-radius: 4px;
   font-weight: bold;
   color: #1b4332;
@@ -85,7 +84,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: 28px;
-  background-color: #52b788;
+  background-color: #1b4332;
   padding: 12px 0;
 }
 
@@ -93,6 +92,10 @@ nav a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+}
+
+nav a:hover {
+  color: #52b788;
 }
 
 @media (max-width: 600px) {
