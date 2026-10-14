@@ -60,9 +60,12 @@
             <h3>Sugerencias y Nuevos Modelos</h3>
             <p>¿Buscas algún calzado o marca en especial? Cuéntanos y evaluaremos traerlo en nuestro próximo pedido.</p>
             
-            <form>
+            <form id="form-sugerencia" novalidate>
                 <label for="nombre">Nombre </label>
                 <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" name="correo" required>
 
                 <label for="whatsapp">Telefono</label>
                 <input type="tel" id="whatsapp" name="whatsapp" >
@@ -71,6 +74,9 @@
                 <textarea id="sugerencia" name="sugerencia" rows="3" required></textarea>
 
                 <button type="submit" class="btn-enviar-pedido">Enviar sugerencia</button>
+
+                <p id="aviso-sugerencia" class="aviso"></p>
+                
             </form>
         </section>
     </main>

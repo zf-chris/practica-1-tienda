@@ -157,6 +157,28 @@ button:hover {
     transform: translateY(-1px);
 }
 
+.aviso {
+    display: none;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.aviso.error {
+    display: block;
+    background-color: #f8d7da;
+    color: #842029;
+    border-left: 4px solid #dc3545;
+}
+
+.aviso.exito {
+    display: block;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-left: 4px solid #198754;
+}
+
 footer {
     text-align: center;
     padding: 1.5rem;
