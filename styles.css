@@ -223,7 +223,9 @@ body.claro .hamburguesa {
     border-color: #475569;
 }
 
-body.claro h1, 
+body.claro h1{
+    color: #d6d9e0;
+} 
 body.claro h2, 
 body.claro h3 {
     color: #0F172A;
