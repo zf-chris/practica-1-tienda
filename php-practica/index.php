@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Web: Calzados y Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <p>Tienda Web: Calzados y Ropa</p>
+        <button type="button" id="btn-tema" class="boton-modo">🌞 Modo día</button>
+        <nav>
+            <button type="button" id="btn-menu" class="hamburguesa">☰ Menú</button>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contactanos</a></li>
+                <li><a href="#acercade">Acerca de</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="tarjeta">
+            <h1>Bienvenido a nuestro catálogo digital</h1>
+            <p>Encuentra los mejores calzados y ropa. Revisa nuestro stock y haz tu reserva directamente por WhatsApp.</p>
+        </section>
+
+        <section id="productos" class="tarjeta">
+            <h2>Catálogo de Productos</h2>
+            <article>
+                <h3>Zapatillas Deportivas Modelo X</h3>
+                <p>Zapatillas de alta calidad, ideales para el día a día.</p>
+                <ul>
+                    <li>Tallas disponibles: 38, 39, 40, 42</li>
+                    <li>Colores: Blanco, Negro</li>
+                </ul>
+                <p>Precio:50.00 Bs</p>
+                <a href="" target="_blank">
+                    <button type="button">Reservar por WhatsApp</button>
+                </a>
+            </article>
+        </section>
+
+        <section id="contacto" class="tarjeta">
+            <h2>Contactanos</h2>
+            <p>Dirección: Calle juan de la cruz 123</p>
+            <p>Horario: Lunes a Viernes de 9 a 18hs</p>
+            <p>Telefono: 12345678</p>
+        </section>
+
+        <section id="acercade" class="tarjeta">
+            <h2>Acerca de nosotros</h2>
+            <p>Somos una tienda especializada en la importación de calzados y ropa de alta calidad. Nuestro objetivo es ofrecer a nuestros clientes una experiencia de compra segura y satisfactoria.</p>
+            
+            <hr class="separador">
+
+            <h3>Sugerencias y Nuevos Modelos</h3>
+            <p>¿Buscas algún calzado o marca en especial? Cuéntanos y evaluaremos traerlo en nuestro próximo pedido.</p>
+            
+            <form id="form-sugerencia" novalidate method="POST" action="procesar.php">
+                <label for="nombre">Nombre </label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="whatsapp">Telefono</label>
+                <input type="tel" id="whatsapp" name="whatsapp" >
+
+                <label for="sugerencia">¿Qué producto te gustaría encontrar?</label>
+                <textarea id="sugerencia" name="sugerencia" rows="3" required></textarea>
+
+                <button type="submit" class="btn-enviar-pedido">Enviar sugerencia</button>
+
+                <p id="aviso-sugerencia" class="aviso"></p>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Tienda Web - Desarrollado por Christian Zarate Fernandez</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
