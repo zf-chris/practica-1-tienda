@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <title>Tienda Web: Calzados y Ropa</title>
 </head>
 <body>
@@ -19,11 +20,12 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main> 
         @yield('contenido')
     </main>
     <footer>
         <p>&copy; 2026 Tienda Web - Desarrollado por Christian Zarate Fernandez</p>
     </footer>
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 </html>

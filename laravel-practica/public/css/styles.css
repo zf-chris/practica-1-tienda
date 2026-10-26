@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0F172A;
+    color: #F8F9FA;
+    line-height: 1.6;
+    padding-bottom: 2rem;
+}
+
+header {
+    background-color: #1E293B;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #E2E8F0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #38BDF8;
+}
+#btn-menu {
+    display: none;
+}
+.hamburguesa {
+    background-color: #334155;
+    color: #F8F9FA;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    margin: 0;
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+h1, h2, h3 {
+    color: #38BDF8;
+    margin-bottom: 0.8rem;
+}
+
+.tarjeta {
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    color: #F8F9FA;
+}
+
+.tarjeta hr.separador {
+    border: none;
+    border-top: 1px solid #334155;
+    margin: 1.5rem 0;
+}
+
+.tarjeta form label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 4px;
+    color: #E2E8F0;
+}
+
+.tarjeta form input,
+.tarjeta form textarea {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font: inherit;
+    background-color: #0F172A;
+    color: #F8F9FA;
+    resize: vertical; 
+}
+
+.tarjeta form input::placeholder,
+.tarjeta form textarea::placeholder {
+    color: #64748B;
+}
+
+body.claro .tarjeta hr.separador {
+    border-top-color: #CBD5E1;
+}
+
+body.claro .tarjeta form label {
+    color: #334155;
+}
+
+body.claro .tarjeta form input,
+body.claro .tarjeta form textarea {
+    background-color: #FFFFFF;
+    border-color: #CBD5E1;
+    color: #0F172A;
+}
+
+button {
+    background-color: #25D366;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #1EBE5D;
+    transform: translateY(-1px);
+}
+
+.aviso {
+    display: none;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.aviso.error {
+    display: block;
+    background-color: #f8d7da;
+    color: #842029;
+    border-left: 4px solid #dc3545;
+}
+
+.aviso.exito {
+    display: block;
+    background-color: #d1e7dd;
+    color: #0f5132;
+    border-left: 4px solid #198754;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1E293B;
+    color: #94A3B8;
+    margin-top: 3rem;
+}
+
+.boton-modo {
+    background-color: #ff8f3c;
+    color: #1a1208;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    margin-top: 0;
+}
+
+body.claro {
+    background-color: #F8F9FA;
+    color: #0F172A;
+}
+
+body.claro header {
+    background-color: #1E293B;
+    color: #ffffff;
+}
+
+body.claro header p {
+    color: #FFFFFF;
+}
+
+body.claro nav a {
+    color: #E2E8F0;
+}
+body.claro .hamburguesa {
+    background-color: #334155;
+    color: #FFFFFF;
+    border-color: #475569;
+}
+
+body.claro h1{
+    color: #d6d9e0;
+} 
+body.claro h2, 
+body.claro h3 {
+    color: #0F172A;
+}
+
+body.claro .tarjeta {
+    background-color: #ffffff;
+    border-color: #E2E8F0;
+    color: #0F172A;
+}
+
+body.claro article {
+    background-color: #F1F5F9;
+    border-color: #CBD5E1;
+}
+
+body.claro footer {
+    background-color: #1E293B;
+    color: #94A3B8;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; 
+        gap: 1rem;
+        padding: 1rem; 
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #btn-menu {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column; 
+        align-items: center;
+        gap: 0.8rem;
+        padding-top: 12px;
+        width: 100%;
+    }
+    nav ul.abierto {
+        display: flex;
+    }
+}

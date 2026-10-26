@@ -3,15 +3,14 @@
 @section('contenido')
 <section id="acercade" class="tarjeta">
     <h2>Acerca de nosotros</h2>
-    <p>Somos una tienda especializada en la importación de calzados y ropa de alta calidad. Nuestro objetivo es ofrecer a nuestros clientes una experiencia de compra segura y satisfactoria.</p>
+    <p>Somos una tienda especializada en la importacion de calzados y ropa de alta calidad. Nuestro objetivo es ofrecer a nuestros clientes una experiencia de compra segura y satisfactoria.</p>
 
     <hr class="separador">
 
     <h3>Sugerencias y Nuevos Modelos</h3>
-    <p>¿Buscas algún calzado o marca en especial? Cuéntanos y evaluaremos traerlo en nuestro próximo pedido.</p>
+    <p>¿Buscas algun calzado o marca en especial? Cuentanos y evaluaremos traerlo en nuestro proximo pedido.</p>
 
-    <!-- Si procesas el formulario en Laravel, puedes poner la ruta correspondiente en action -->
-    <form id="form-sugerencia" novalidate method="POST" action="">
+    <form id="form-sugerencia" novalidate method="POST" action="{{ route('sugerencia.guardar') }}">
         @csrf
         <label for="nombre">Nombre </label>
         <input type="text" id="nombre" name="nombre" required>

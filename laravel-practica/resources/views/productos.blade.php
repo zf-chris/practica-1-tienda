@@ -11,7 +11,7 @@
             <li>Colores: Blanco, Negro</li>
         </ul>
         <p>Precio: 50.00 Bs</p>
-        <a href="https://wa.me/..." target="_blank">
+        <a href="https://wa.me/59160756775" target="_blank">
             <button type="button">Reservar por WhatsApp</button>
         </a>
     </article>
