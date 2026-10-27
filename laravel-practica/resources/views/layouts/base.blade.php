@@ -17,6 +17,18 @@
                 <li><a href="{{ route('productos') }}">Productos</a></li>
                 <li><a href="{{ route('contacto') }}">Contactanos</a></li>
                 <li><a href="{{ route('acerca') }}">Acerca de</a></li>
+                @auth
+                    <li>
+                        <form action="/logout" method="POST">
+                            @csrf
+                            <button type="submit" class="btn-cerrar">Cerrar sesion</button>
+                        </form>
+                    </li>
+                @else
+                    <li>
+                        <a href="{{ route('login') }}">Iniciar sesion</a>
+                    </li>
+                @endauth
             </ul>
         </nav>
     </header>

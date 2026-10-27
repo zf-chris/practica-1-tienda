@@ -246,7 +246,12 @@ body.claro footer {
     background-color: #1E293B;
     color: #94A3B8;
 }
-
+.btn-cerrar{
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #eb1741;
+}
 @media (max-width: 600px) {
     header {
         flex-direction: column; 

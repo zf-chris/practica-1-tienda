@@ -9,7 +9,11 @@
 
     <h3>Sugerencias y Nuevos Modelos</h3>
     <p>¿Buscas algun calzado o marca en especial? Cuentanos y evaluaremos traerlo en nuestro proximo pedido.</p>
-
+    @if(session('success'))
+        <div class="aviso exito">
+            {{ session('success') }}
+        </div>
+    @endif
     <form id="form-sugerencia" novalidate method="POST" action="{{ route('sugerencia.guardar') }}">
         @csrf
         <label for="nombre">Nombre </label>
